@@ -1,0 +1,25 @@
+$color-principal: #393e46;
+$color-letra: #FFFFFF;
+$color-secundario: #465265;
+
+form{
+    background-color: $color-secundario;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.icon-star-color{
+    color: #fff584;
+}
+
+.icon-default-color{
+    color: $color-letra;
+}
+
+.label-default-color{
+    color: $color-letra;
+}
+
+.content-info{
+    padding: 2rem;
+}

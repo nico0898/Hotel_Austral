@@ -1,0 +1,129 @@
+@import "Animation";
+
+$color-principal: #393e46;
+$color-letra: #FFFFFF;
+$color-navbar: #222831;
+
+body{    
+    background-color: $color-principal;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: $color-navbar;
+}
+
+.navbar{
+    padding: 2rem 1rem;    
+}
+
+.navbar-toggler{
+    border: solid 1px #FFFFFF;
+}
+
+@mixin animation-underline {
+    :hover { 
+        color: $color-letra;
+    }
+
+    :after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #FFFFFF;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    :hover:after { 
+        width: 100%; 
+        left: 0; 
+        color: $color-letra;
+    }
+}
+
+.nav-item {
+    color: $color-letra;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+
+    @include animation-underline;
+
+    a{
+        color: $color-letra;
+    }
+}
+  
+.iconMenu{
+    color: $color-letra;
+} 
+
+ul{
+    list-style: none;
+}
+
+footer{
+    color: $color-letra;
+    border-top: 1px solid #2C345969;
+    padding: 20px;
+
+    a{
+        color: $color-letra;
+
+        :hover{
+            color: $color-letra;
+        }
+    }
+}
+
+.iconFooter{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #2C345969;
+
+    :hover{
+        color: #88726B;
+    }
+}
+
+.divider{
+    border-bottom: 4px solid #fff;
+    width: 10rem;
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+
+@media only screen and (min-width: 320px){
+    nav {
+        img{
+            width: 95px;
+            height: 70px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    nav {
+        img{
+            width: 95px;
+            height: 70px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    nav {
+        img{
+            width: 125px; 
+            height: 100px;
+        }
+    }
+}

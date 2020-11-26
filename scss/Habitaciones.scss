@@ -1,0 +1,26 @@
+
+.parallax{
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@for $i from 1 through 2{
+    .parallax-imagen-#{$i}{
+        background-image: url(../img/imagen-parallax-#{$i}-habitacion.jpg);
+        padding: 5rem 0;
+    }
+}
+
+.parallax-content{
+    background-color: grey;
+    margin: 0 20rem;
+    padding: 2rem;
+    opacity: 0.8 !important;
+}
+
+.parallax-content-size{
+    font-size: 2rem;
+}

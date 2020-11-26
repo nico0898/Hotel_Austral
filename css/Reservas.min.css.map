@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,IAAI,AAAA,CACA,gBAAgB,CAHD,OAAO,CAItB,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CACtB,AAED,AAAA,gBAAgB,AAAA,CACZ,KAAK,CAAE,OAAO,CACjB,AAED,AAAA,mBAAmB,AAAA,CACf,KAAK,CAdK,IAAO,CAepB,AAED,AAAA,oBAAoB,AAAA,CAChB,KAAK,CAlBK,IAAO,CAmBpB,AAED,AAAA,aAAa,AAAA,CACT,OAAO,CAAE,IAAI,CAChB",
+    "sources": [
+        "../scss/Reservas.scss"
+    ],
+    "names": [],
+    "file": "Reservas.min.css"
+}

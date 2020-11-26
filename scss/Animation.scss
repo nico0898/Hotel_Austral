@@ -1,0 +1,19 @@
+/* Animation */
+
+@mixin animation-view-image{
+  animation-duration: 3s;
+  animation-name: aparecer;
+}
+
+.aparecer{
+  @include animation-view-image();
+}
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
