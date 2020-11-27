@@ -8,9 +8,6 @@
     <meta name="description" content="Disfrute una estadía inolvidable en el Hotel Luxury, que ofrece excelente gastronomía regional, entretenimientos para todo el publico y una ubicación próxima a atracciones culturales de la ciudad. Haga su reserva.">
 
     <meta name="keywords" content="Hotel Luxury, Luxury, Reserva, Hoteles, Estadia, Habitaciones, Hotel en Buenos Aires, SPA, Piscina, Comida regional, Gastronomia">
-
-    <!-- libreria google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     
     <!-- libreria bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -20,6 +17,16 @@
     <!-- libreria ion icon -->
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
+        <!-- libreria AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+        <script>
+            $(document).ready(function(){
+                AOS.init();
+            });
+        </script>
+
     <!-- estilos propios -->
     <link rel="stylesheet" href="css/Index.min.css">
     <link rel="stylesheet" href="css/Layout.min.css">
@@ -27,30 +34,29 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="Index.html">
-            <!-- logo -->
-            <span></span>
+            <span class="text-white text-logo">Hotel Austral</span>
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <ion-icon name="menu-outline" class="iconMenu"></ion-icon>
+            <ion-icon name="menu-outline" class="text-white" size="large"></ion-icon>
         </button>
       
         <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item active">
-              <a class="nav-link m-2 menu-item" href="Index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link m-2 text-white" href="Index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link m-2 menu-item" href="View/Habitaciones.html">Habitaciones</a>  
+              <a class="nav-link m-2 text-white" href="View/Habitaciones.html">Habitaciones</a>  
             </li>
             <li class="nav-item">
-              <a class="nav-link m-2 menu-item" href="View/Servicios.html">Servicios</a>
+              <a class="nav-link m-2 text-white" href="View/Servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link m-2 menu-item" href="View/Reservas.html">Reservas</a>
+              <a class="nav-link m-2 text-white" href="View/Reservas.html">Reservas</a>
             </li>
             <li class="nav-item dropleft">
-              <a class="nav-link m-2 menu-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link m-2 dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Español
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -62,9 +68,9 @@
         </div>
     </nav>
 
-    <!-- info del hotel  -->
+    <!-- presentacion del hotel  -->
     <section>
-        <img class="start-image w-100 aparecer" src="img/Hotel-home.png" alt=""> jorge
+        <img class="start-image w-100 aparecer" src="img/Hotel-home.png" alt="">
     </section>
 
     <!-- datos del hotel  -->
@@ -104,13 +110,32 @@
         </div>
     </section>
 
-    <!-- vista del hotel -->
-    <section id="vistas">
+    <!-- info del hotel -->
+    <section class="container-fluid py-5">
         <div class="row">
             <div class="col-12 col-md-5">
-            
+                <div class="text-content text-center rounded shadow-lg" data-aos="fade-up" data-aos-duration="2000" >
+                    <h2 class="text-white">Hotel Austral</h2>
+                    <hr class="divider">
+                    <p class="text-white py-3">
+                        Ubicado en el corazón de la ciudad, el Hotel Austral
+                        es un monumento para los pasajeros internacionales. Nuestro hotel ofrece vistas 
+                        espectaculares de la ciudad. <br>
+                        Disfrute de deliciosos platillos regionales y acompáñelos con delicados vinos argentinos.<br> 
+                        Descanse en nuestras cómodas habitaciones con amplio espacio, 
+                        hermosas vistas, camas con sábanas de lujo y acceso a la piscina. <br>
+                        Haga ejercicios en nuestro gimnasio equipado con máquinas cardiovasculares y vistas a la 
+                        piscina o en nuestras canchas de tenis. <br>
+                        Para los amantes de la natación, nuestro hotel en Buenos Aires ofrece una piscina 
+                        al aire libre con una terraza solárium y bar. <br>
+                        Sorprenda a los invitados de su reunión o boda con nuestros elegantes espacios que 
+                        cuentan con vistas de la ciudad y plena luz natural. Nuestros salones de eventos pueden 
+                        dar cabida de hasta 1.245 invitados. <br>
+                        <span>En su próxima visita a la ciudad seleccione el Hotel Austral, para una estadía inolvidable.</span>
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-md-7 image-background">
+            <div class="col-12 col-md-7 image-background" id="">
                 <img class="image-background-absolute image-background-position-1 aparecer" src="img/Lobby-1-home.png" alt="">
                 
                 <img class="image-background-absolute image-background-position-2 aparecer" src="img/Lobby-2-home.png" alt="">
@@ -124,7 +149,7 @@
     </section>
 
     <!-- contacto via emial -->
-    <section class="container w-50 mx-auto py-5 text-white">
+    <section class="container-sm container py-5 text-white">
         <h2>Contactanos</h2>
 
         <form>

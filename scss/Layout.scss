@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 @import "Animation";
 
 $color-principal: #393e46;
@@ -8,6 +11,19 @@ body{
     background-color: $color-principal;
     margin: 0;
     padding: 0;
+    // font-family: 'Roboto', sans-serif;
+}
+
+.courgette {
+    font-family: 'Courgette', cursive;
+}
+
+.text-logo{
+    font-size: xx-large;
+}
+
+.text-black{
+    color: #000000;
 }
 
 nav{
@@ -23,10 +39,6 @@ nav{
 }
 
 @mixin animation-underline {
-    :hover { 
-        color: $color-letra;
-    }
-
     :after {    
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
@@ -43,7 +55,6 @@ nav{
     :hover:after { 
         width: 100%; 
         left: 0; 
-        color: $color-letra;
     }
 }
 
@@ -56,15 +67,7 @@ nav{
     position: relative;
 
     @include animation-underline;
-
-    a{
-        color: $color-letra;
-    }
 }
-  
-.iconMenu{
-    color: $color-letra;
-} 
 
 ul{
     list-style: none;
@@ -84,46 +87,9 @@ footer{
     }
 }
 
-.iconFooter{
-    padding: 5px;
-    border-radius: 10px;
-    background-color: #2C345969;
-
-    :hover{
-        color: #88726B;
-    }
-}
-
 .divider{
     border-bottom: 4px solid #fff;
     width: 10rem;
     margin-top: 0;
     margin-bottom: 0%;
-}
-
-@media only screen and (min-width: 320px){
-    nav {
-        img{
-            width: 95px;
-            height: 70px;
-        }
-    }
-}
-
-@media only screen and (min-width: 768px){
-    nav {
-        img{
-            width: 95px;
-            height: 70px;
-        }
-    }
-}
-
-@media only screen and (min-width: 1024px){
-    nav {
-        img{
-            width: 125px; 
-            height: 100px;
-        }
-    }
 }
