@@ -10,6 +10,10 @@ $color-secundario: #465265;
     }
 }
 
+.icon{
+    font-size: 3.5rem;
+}
+
 #vistas{
     padding: 0 15px;
     margin: 20px 0;
@@ -20,10 +24,6 @@ $color-secundario: #465265;
     background-color: #8080802a;
     padding: 2rem;
     text-align: center;
-}
-
-.image-background{
-    position: relative;
 }
 
 .image-background-absolute{
@@ -54,14 +54,10 @@ $color-secundario: #465265;
 .parallax-label-text{
     color: white;
     font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
 }
 
 @media only screen and (min-width: 320px){
-
-    .icon{
-        color: #88726B;
-        font-size: 2rem;
-    }
 
     .parallax{
         padding: 1rem 0;
@@ -70,21 +66,26 @@ $color-secundario: #465265;
     .parallax-label-text{
         color: white;
         font-size: 2.3rem;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .image-background{
+        position: relative;
+        visibility: hidden;
     }
 
     .image-background-absolute{
         height: 45vh;
         width: 100%;
     }
+
+    .h-100{
+
+    }
 }
 
 @media only screen and (min-width: 768px){
-
-    .icon{
-        color: #88726B;
-        font-size: 3.5rem;
-    }
-
+    
     .parallax{
         padding: 2rem 0;
     }
@@ -92,7 +93,14 @@ $color-secundario: #465265;
     .parallax-label-text{
         color: white;
         font-size: 3rem;
+        text-shadow: 2px 2px 2px black;
     }
+
+    .image-background{
+        position: relative;
+        visibility: visible;
+    }
+
     .image-background-absolute{
         height: 50vh;
         width: 80vw;
@@ -100,36 +108,6 @@ $color-secundario: #465265;
 }
 
 @media only screen and (min-width: 1024px){
-
-    .icon{
-        color: #fff;
-        font-size: 3.5rem;
-    }
-
-    .parallax{
-        padding: 2rem 0;
-    }
-
-    .parallax-label-text{
-        color: white;
-        font-size: 3rem;
-    }
-
-    .image-background-absolute{
-        height: 45vh;
-        width: 75vw;
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    .icon{
-        color: #fff;
-        font-size: 3.5rem;
-    }
-
-    .parallax{
-        padding: 2rem 0;
-    }
 
     .parallax-label-text{
         color: white;
@@ -139,5 +117,10 @@ $color-secundario: #465265;
     .image-background-absolute{
         height: 50vh;
         width: 40vw;
+    }
+
+    .container-sm{
+        padding-right: 200px;
+        padding-left: 200px;
     }
 }

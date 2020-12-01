@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 @import "Animation";
 
@@ -12,11 +13,12 @@ body{
     margin: 0;
     padding: 0;
     // font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
 }
 
-.courgette {
-    font-family: 'Courgette', cursive;
-}
+// .courgette {
+//     font-family: 'Courgette', cursive;
+// }
 
 .text-logo{
     font-size: xx-large;
@@ -73,23 +75,22 @@ ul{
     list-style: none;
 }
 
-footer{
-    color: $color-letra;
-    border-top: 1px solid #2C345969;
-    padding: 20px;
-
-    a{
-        color: $color-letra;
-
-        :hover{
-            color: $color-letra;
-        }
-    }
-}
-
 .divider{
     border-bottom: 4px solid #fff;
     width: 10rem;
     margin-top: 0;
     margin-bottom: 0%;
+}
+
+.nav-link{
+    color: $color-letra;
+}
+
+.icon-footer{
+    font-size: x-large;
+    color: $color-letra;
+    margin: 0 1rem;
+    :hover{
+        color: $color-navbar;
+    }
 }
