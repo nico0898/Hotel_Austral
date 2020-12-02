@@ -22,18 +22,6 @@
     padding: 5rem 0;
 }
 
-.parallax-content{
-    background-color: grey;
-    margin: 0 20rem;
-    padding: 2rem;
-    opacity: 0.8 !important;
-}
-
-.parallax-content-text{
-    color: white;
-    font-size: 2rem;
-}
-
 @media only screen and (min-width: 320px){
     .parallax-content{
         background-color: grey;
@@ -69,5 +57,43 @@
 
     #eventosCarousel{
         display: inherit;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .parallax-content{
+        background-color: grey;
+        margin: 0 20rem;
+        padding: 2rem;
+        opacity: 0.8 !important;
+    }
+    
+    .parallax-content-text{
+        color: white;
+        font-size: 2rem;
+    }
+
+    #entretenimiento{
+        display: inherit;
+    }
+
+    #gastronomia{
+        display: inherit;
+    }
+
+    #eventos{
+        display: inherit;
+    }
+
+    #entretenimientoCarousel{
+        display: none;
+    }
+
+    #gastronomiaCarousel{
+        display: none;
+    }
+
+    #eventosCarousel{
+        display: none;
     }
 }
