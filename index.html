@@ -25,6 +25,17 @@
         $(document).ready(function(){
             AOS.init();
         });
+
+        $(window).scroll(function() {
+  
+            let position = $(this).scrollTop();
+
+            if (position >= 100) {
+                $('.navbar').addClass('costum-navbar');
+            } else {
+                $('.navbar').removeClass('costum-navbar');
+            }
+        });
     </script>
 
     <!-- estilos propios -->
@@ -32,7 +43,7 @@
     <link rel="stylesheet" href="css/Layout.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">
             <span class="text-white text-logo">Hotel Austral</span>
         </a>
@@ -44,19 +55,19 @@
         <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item">
-              <a class="nav-link m-2 text-white" href="index.html">Home</a>
+              <a class="nav-link mx-2 text-white" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link m-2 text-white" href="view/habitaciones.html">Habitaciones</a>  
+              <a class="nav-link mx-2 text-white" href="view/habitaciones.html">Habitaciones</a>  
             </li>
             <li class="nav-item">
-              <a class="nav-link m-2 text-white" href="view/servicios.html">Servicios</a>
+              <a class="nav-link mx-2 text-white" href="view/servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link m-2 text-white" href="view/reservas.html">Reservas</a>
+              <a class="nav-link mx-2 text-white" href="view/reservas.html">Reservas</a>
             </li>
             <li class="nav-item dropleft">
-              <a class="nav-link m-2 dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link mx-2 dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Español
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -70,7 +81,7 @@
 
     <!-- presentacion del hotel  -->
     <section>
-        <img class="w-100 h-100 aparecer" src="img/Hotel-home.png" alt="">
+        <img class="w-100 aparecer" src="img/Hotel-home.png" alt="Panorama del hotel" loading="lazy">
     </section>
 
     <!-- datos del hotel  -->
@@ -133,9 +144,9 @@
                 </div>
             </div>
             <div class="col-12 col-md-7 image-background" id="">
-                <img class="image-background-absolute image-background-position-1 aparecer" src="img/Lobby-1-home.png" alt="">
+                <img class="image-background-absolute image-background-position-1 aparecer" src="img/Lobby-1-home.png" alt="Lobby del hotel" loading="lazy">
                 
-                <img class="image-background-absolute image-background-position-2 aparecer" src="img/Lobby-2-home.png" alt="">
+                <img class="image-background-absolute image-background-position-2 aparecer" src="img/Lobby-2-home.png" alt="Lobby del hotel" loading="lazy">
             </div>
         </div>
     </section>

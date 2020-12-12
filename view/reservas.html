@@ -17,6 +17,23 @@
     <!-- libreria ion icon -->
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
+    <script>
+      $(document).ready(function(){
+          AOS.init();
+      });
+
+      $(window).scroll(function() {
+
+          let position = $(this).scrollTop();
+
+          if (position >= 100) {
+              $('.navbar').addClass('costum-navbar');
+          } else {
+              $('.navbar').removeClass('costum-navbar');
+          }
+      });
+  </script>
+
     <!-- estilos propios -->
     <link rel="stylesheet" href="../css/Reservas.min.css">
     <link rel="stylesheet" href="../css/Layout.min.css">
@@ -62,16 +79,16 @@
     <section class="container py-3">
         <form action="">
             <div class="row">
-                <div class="col-md-3">
-                    <input type="text" placeholder="Fecha ingreso" class="form-control">
+                <div class="col-md-3 my-2">
+                    <input type="text" placeholder="Fecha ingreso" class="form-control" onfocus="(this.type='date')">
                 </div>
-                <div class="col-md-3">
-                    <input type="text" placeholder="Fecha egreso" class="form-control">
+                <div class="col-md-3 my-2">
+                    <input type="text" placeholder="Fecha egreso" class="form-control"  onfocus="(this.type='date')">
                 </div>
-                <div class="col-md-3">
-                    <input type="text" placeholder="Fecha ingreso" class="form-control">
+                <div class="col-md-3 my-2">
+                    <input type="number" placeholder="Cantidad de personas" class="form-control">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 my-2">
                     <button type="submit" class="btn btn-success btn-block">Aplicar</button>
                 </div>
             </div>
@@ -90,13 +107,13 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100" src="../img/clasica-1-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-1-habitacion.png" alt="Habitacion King" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/clasica-2-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-2-habitacion.png" alt="Habitacion King" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/clasica-6-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-6-habitacion.png" alt="Habitacion King" loading="lazy">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
@@ -111,32 +128,37 @@
             </div>
             <div class="col">
                 <div class="content-info">
-                    <ul>
+                    <ul class="text-white">
                         <li>
-                            <label for="" class="label-default-color">Calificacion</label> 
+                          <h4>
+                            Habitacion King
+                          </h4>
+                        </li>
+                        <li>
+                            <label for="">Calificacion</label> 
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Wifi</label>
+                            <label for="">Wifi</label>
                             <ion-icon name="wifi" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Garage</label>
+                            <label for="">Garage</label>
                             <ion-icon name="car-sport" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Bar</label>
+                            <label for="" >Bar</label>
                             <ion-icon name="wine" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Admite mascota</label>
+                            <label for="" >Admite mascota</label>
                             <ion-icon name="paw" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Habitaciones para no fumadores</label>
+                            <label for="" >Habitaciones para no fumadores</label>
                             <ion-icon name="logo-no-smoking" class="icon-default-color"></ion-icon>
                         </li>
                     </ul>
@@ -156,13 +178,13 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100" src="../img/clasica-3-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-3-habitacion.png" alt="Habitacion King Doble" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/clasica-4-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-4-habitacion.png" alt="Habitacion King Doble" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/clasica-5-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-5-habitacion.png" alt="Habitacion King Doble" loading="lazy">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
@@ -177,32 +199,37 @@
             </div>
             <div class="col">
                 <div class="content-info">
-                    <ul>
+                    <ul class="text-white">
+                      <li>
+                        <h4>
+                          Habitacion King Doble
+                        </h4>
+                      </li>
                         <li>
-                            <label for="" class="label-default-color">Calificacion</label> 
+                            <label for="" >Calificacion</label> 
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Wifi</label>
+                            <label for="" >Wifi</label>
                             <ion-icon name="wifi" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Garage</label>
+                            <label for="" >Garage</label>
                             <ion-icon name="car-sport" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Bar</label>
+                            <label for="" >Bar</label>
                             <ion-icon name="wine" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Admite mascota</label>
+                            <label for="" >Admite mascota</label>
                             <ion-icon name="paw" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Habitaciones para no fumadores</label>
+                            <label for="" >Habitaciones para no fumadores</label>
                             <ion-icon name="logo-no-smoking" class="icon-default-color"></ion-icon>
                         </li>
                     </ul>
@@ -219,16 +246,20 @@
                       <li data-target="#carousel3" data-slide-to="0" class="active"></li>
                       <li data-target="#carousel3" data-slide-to="1"></li>
                       <li data-target="#carousel3" data-slide-to="2"></li>
+                      <li data-target="#carousel3" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100" src="../img/suites-1-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-1-habitacion.png" alt="" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-2-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-2-habitacion.png" alt="Suite Deluxe" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-7-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-7-habitacion.png" alt="Suite Deluxe" loading="lazy">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="w-100" src="../img/suites-6-habitacion.png" alt="Suite Deluxe" loading="lazy">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
@@ -243,32 +274,37 @@
             </div>
             <div class="col">
                 <div class="content-info">
-                    <ul>
+                    <ul class="text-white">
+                      <li>
+                        <h4>
+                          Suite Deluxe
+                        </h4>
+                      </li>
                         <li>
-                            <label for="" class="label-default-color">Calificacion</label> 
+                            <label for="" >Calificacion</label> 
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Wifi</label>
+                            <label for="" >Wifi</label>
                             <ion-icon name="wifi" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Garage</label>
+                            <label for="" >Garage</label>
                             <ion-icon name="car-sport" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Bar</label>
+                            <label for="" >Bar</label>
                             <ion-icon name="wine" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Admite mascota</label>
+                            <label for="" >Admite mascota</label>
                             <ion-icon name="paw" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Habitaciones para no fumadores</label>
+                            <label for="" >Habitaciones para no fumadores</label>
                             <ion-icon name="logo-no-smoking" class="icon-default-color"></ion-icon>
                         </li>
                     </ul>
@@ -289,16 +325,16 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100" src="../img/suites-9-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-9-habitacion.png" alt="Suite Ejecutiva" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-10-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-10-habitacion.png" alt="Suite Ejecutiva" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-11-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-11-habitacion.png" alt="Suite Ejecutiva" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-12-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-12-habitacion.png" alt="Suite Ejecutiva" loading="lazy">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel4" role="button" data-slide="prev">
@@ -313,32 +349,37 @@
             </div>
             <div class="col">
                 <div class="content-info">
-                    <ul>
+                    <ul class="text-white">
                         <li>
-                            <label for="" class="label-default-color">Calificacion</label> 
+                          <h4>
+                            Suite Ejecutiva
+                          </h4>
+                        </li>
+                        <li>
+                            <label for="" >Calificacion</label> 
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                             <ion-icon name="star" class="icon-star-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Wifi</label>
+                            <label for="" >Wifi</label>
                             <ion-icon name="wifi" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Garage</label>
+                            <label for="" >Garage</label>
                             <ion-icon name="car-sport" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Bar</label>
+                            <label for="" >Bar</label>
                             <ion-icon name="wine" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Admite mascota</label>
+                            <label for="" >Admite mascota</label>
                             <ion-icon name="paw" class="icon-default-color"></ion-icon>
                         </li>
                         <li>
-                            <label for="" class="label-default-color">Habitaciones para no fumadores</label>
+                            <label for="" >Habitaciones para no fumadores</label>
                             <ion-icon name="logo-no-smoking" class="icon-default-color"></ion-icon>
                         </li>
                     </ul>

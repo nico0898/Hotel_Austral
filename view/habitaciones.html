@@ -20,16 +20,36 @@
     <!-- libreria AOS animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- libreria lightbox -->
+    <link rel="stylesheet" href="../node_modules/lightbox2/dist/css/lightbox.min.css">
+    <script src="../node_modules/lightbox2/dist/js/lightbox.min.js"></script>
 
     <script>
-        $(document).ready(function(){
-            AOS.init();
-        });
-    </script>
+      $(document).ready(function(){
+          AOS.init();
 
-    <!-- estilos propios -->
-    <link rel="stylesheet" href="../css/Habitaciones.min.css">
-    <link rel="stylesheet" href="../css/Layout.min.css">
+          lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+          })
+      });
+
+      $(window).scroll(function() {
+
+          let position = $(this).scrollTop();
+
+          if (position >= 100) {
+              $('.navbar').addClass('costum-navbar');
+          } else {
+              $('.navbar').removeClass('costum-navbar');
+          }
+      });
+  </script>
+  
+  <!-- estilos propios -->
+  <link rel="stylesheet" href="../css/Habitaciones.min.css">
+  <link rel="stylesheet" href="../css/Layout.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -79,30 +99,44 @@
     <section class="container-fluid py-4" id="comun">
         <div class="row">
             <div class="col-md-3">   
-                <img class="w-100 aparecer" src="../img/clasica-1-habitacion.png" alt="">             
+              <a href="../img/clasica-1-habitacion.png" data-lightbox="comun" data-title="Habitacion King">
+                <img class="w-100 aparecer" src="../img/clasica-1-habitacion.png" alt="Habitacion King" loading="lazy">       
+              </a>      
             </div>
             <div class="col-md-3">        
-                <img class="w-100 aparecer" src="../img/clasica-2-habitacion.png" alt="">      
+              <a href="../img/clasica-2-habitacion.png" data-lightbox="comun" data-title="Habitacion King">
+              </a>
+                <img class="w-100 aparecer" src="../img/clasica-2-habitacion.png" alt="Habitacion King" loading="lazy">      
             </div>
-            <div class="col-md-3">       
-                <img class="w-100 aparecer" src="../img/clasica-3-habitacion.png" alt="">          
+            <div class="col-md-3">          
+              <a href="../img/clasica-3-habitacion.png" data-lightbox="comun" data-title="Habitacion King Doble">
+              </a>     
+                <img class="w-100 aparecer" src="../img/clasica-3-habitacion.png" alt="Habitacion King Doble" loading="lazy">          
             </div>
-            <div class="col-md-3">    
-                <img class="w-100 aparecer" src="../img/clasica-4-habitacion.png" alt="">       
+            <div class="col-md-3">         
+              <a href="../img/clasica-4-habitacion.png" data-lightbox="comun" data-title=" Habitacion King">
+              </a>   
+                <img class="w-100 aparecer" src="../img/clasica-4-habitacion.png" alt="Habitacion King" loading="lazy">       
             </div>
         </div>
 
         <br>
 
         <div class="row">
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/clasica-5-habitacion.png" alt="">  
+            <div class="col-md-3">        
+              <a href="../img/clasica-5-habitacion.png" data-lightbox="comun" data-title="Habitacion King Doble">
+                <img class="w-100 aparecer" src="../img/clasica-5-habitacion.png" alt="Habitacion King Doble" loading="lazy">  
+              </a>
             </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/clasica-6-habitacion.png" alt="">  
+            <div class="col-md-3">        
+              <a href="../img/clasica-6-habitacion.png" data-lightbox="comun" data-title="Habitacion King Doble">
+                <img class="w-100 aparecer" src="../img/clasica-6-habitacion.png" alt="Habitacion King Doble" loading="lazy">  
+              </a>
             </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/clasica-7-habitacion.png" alt="">  
+            <div class="col-md-3">        
+              <a href="../img/clasica-7-habitacion.png" data-lightbox="comun" data-title="Habitacion King Doble">
+                <img class="w-100 aparecer" src="../img/clasica-7-habitacion.png" alt="Habitacion King Doble" loading="lazy">  
+              </a>
             </div>
         </div>
     </section>
@@ -124,25 +158,25 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100" src="../img/clasica-1-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-1-habitacion.png" alt="Habitacion clasica" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/clasica-2-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-2-habitacion.png" alt="Habitacion clasica" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/clasica-3-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-3-habitacion.png" alt="Habitacion clasica" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/clasica-4-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-4-habitacion.png" alt="Habitacion clasica" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/clasica-5-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-5-habitacion.png" alt="Habitacion clasica" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/clasica-5-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-5-habitacion.png" alt="Habitacion clasica" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/clasica-7-habitacion.png" alt="">
+                        <img class="w-100" src="../img/clasica-7-habitacion.png" alt="Habitacion clasica" loading="lazy">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
@@ -168,51 +202,75 @@
 
     <section class="container-fluid py-4" id="suites">
         <div class="row">
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-1-habitacion.png" alt="">
+            <div class="col-md-3"> 
+              <a href="../img/suites-1-habitacion.png" data-lightbox="suites" data-title="Suite Deluxe">
+                <img class="w-100 aparecer" src="../img/suites-1-habitacion.png" alt="Suite Deluxe" loading="lazy">       
+              </a> 
             </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-2-habitacion.png" alt="">
+            <div class="col-md-3"> 
+              <a href="../img/suites-2-habitacion.png" data-lightbox="suites" data-title="Suite Deluxe">
+                <img class="w-100 aparecer" src="../img/suites-2-habitacion.png" alt="Suite Deluxe" loading="lazy">
+              </a> 
             </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-3-habitacion.png" alt="">
+            <div class="col-md-3"> 
+              <a href="../img/suites-3-habitacion.png" data-lightbox="suites" data-title="Suite Presidencial">
+                <img class="w-100 aparecer" src="../img/suites-3-habitacion.png" alt="Suite Presidencial" loading="lazy">
+              </a> 
             </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-4-habitacion.png" alt="">
-            </div>
-        </div>
-
-        <br>
-
-        <div class="row">
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-5-habitacion.png" alt="">
-            </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-6-habitacion.png" alt="">
-            </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-7-habitacion.png" alt="">
-            </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-8-habitacion.png" alt="">
+            <div class="col-md-3"> 
+              <a href="../img/suites-4-habitacion.png" data-lightbox="suites" data-title="Suite Presidencial">
+                <img class="w-100 aparecer" src="../img/suites-4-habitacion.png" alt="Suite Presidencial" loading="lazy">
+              </a> 
             </div>
         </div>
 
         <br>
 
         <div class="row">
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-9-habitacion.png" alt="">
+            <div class="col-md-3"> 
+              <a href="../img/suites-5-habitacion.png" data-lightbox="suites" data-title="Suite Presidencial">
+                <img class="w-100 aparecer" src="../img/suites-5-habitacion.png" alt="Suite Presidencial" loading="lazy">
+              </a> 
             </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-10-habitacion.png" alt="">
+            <div class="col-md-3"> 
+              <a href="../img/suites-6-habitacion.png" data-lightbox="suites" data-title="Suite Deluxe">
+                <img class="w-100 aparecer" src="../img/suites-6-habitacion.png" alt="Suite Deluxe" loading="lazy">
+              </a> 
             </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-11-habitacion.png" alt="">
+            <div class="col-md-3"> 
+              <a href="../img/suites-7-habitacion.png" data-lightbox="suites" data-title="Suite Deluxe">
+                <img class="w-100 aparecer" src="../img/suites-7-habitacion.png" alt="Suite Deluxe" loading="lazy">
+              </a> 
             </div>
-            <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/suites-12-habitacion.png" alt="">
+            <div class="col-md-3"> 
+              <a href="../img/suites-8-habitacion.png" data-lightbox="suites" data-title="Suite Presidencial">
+                <img class="w-100 aparecer" src="../img/suites-8-habitacion.png" alt="Suite Presidencial" loading="lazy">
+              </a> 
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-3"> 
+              <a href="../img/suites-9-habitacion.png" data-lightbox="suites" data-title="Suite Ejecutiva">
+                <img class="w-100 aparecer" src="../img/suites-9-habitacion.png" alt="Suite Ejecutiva" loading="lazy">
+              </a> 
+            </div>
+            <div class="col-md-3"> 
+              <a href="../img/suites-10-habitacion.png" data-lightbox="suites" data-title="Suite Ejecutiva">
+                <img class="w-100 aparecer" src="../img/suites-10-habitacion.png" alt="Suite Ejecutiva" loading="lazy">
+              </a> 
+            </div>
+            <div class="col-md-3"> 
+              <a href="../img/suites-11-habitacion.png" data-lightbox="suites" data-title="Suite Ejecutiva">
+                <img class="w-100 aparecer" src="../img/suites-11-habitacion.png" alt="Suite Ejecutiva" loading="lazy">
+              </a> 
+            </div>
+            <div class="col-md-3"> 
+              <a href="../img/suites-12-habitacion.png" data-lightbox="suites" data-title="Suite Ejecutiva">
+                <img class="w-100 aparecer" src="../img/suites-12-habitacion.png" alt="Suite Ejecutiva" loading="lazy">
+              </a> 
             </div>
         </div>
     </section>
@@ -239,40 +297,40 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100" src="../img/suites-1-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-1-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-2-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-2-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-3-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-3-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-4-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-4-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-5-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-5-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-6-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-6-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-7-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-7-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-8-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-8-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-9-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-9-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-10-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-10-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-11-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-11-habitacion.png" alt="suites" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/suites-12-habitacion.png" alt="">
+                        <img class="w-100" src="../img/suites-12-habitacion.png" alt="suites" loading="lazy">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">

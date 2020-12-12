@@ -1,24 +1,20 @@
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 @import "Animation";
 
 $color-principal: #393e46;
 $color-letra: #FFFFFF;
-$color-navbar: #222831;
+$color-navbar: #22283100;
 
 body{    
     background-color: $color-principal;
     margin: 0;
     padding: 0;
     // font-family: 'Roboto', sans-serif;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
-// .courgette {
-//     font-family: 'Courgette', cursive;
-// }
 
 .text-logo{
     font-size: xx-large;
@@ -30,10 +26,6 @@ body{
 
 nav{
     background-color: $color-navbar;
-}
-
-.navbar{
-    padding: 2rem 1rem;    
 }
 
 .navbar-toggler{
@@ -93,4 +85,15 @@ ul{
     :hover{
         color: $color-navbar;
     }
+}
+
+.costum-navbar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #222831;
+    animation-duration: 0.8s;
+    animation-name: aparecer;
 }

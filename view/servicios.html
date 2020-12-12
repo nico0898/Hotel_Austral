@@ -21,11 +21,31 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- libreria lightbox -->
+    <link rel="stylesheet" href="../node_modules/lightbox2/dist/css/lightbox.min.css">
+    <script src="../node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+
     <script>
-        $(document).ready(function(){
-            AOS.init();
-        });
-    </script>
+      $(document).ready(function(){
+          AOS.init();
+          
+          lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+          })
+      });
+
+      $(window).scroll(function() {
+
+          let position = $(this).scrollTop();
+
+          if (position >= 100) {
+              $('.navbar').addClass('costum-navbar');
+          } else {
+              $('.navbar').removeClass('costum-navbar');
+          }
+      });
+  </script>
 
     <!-- estilos propios -->
     <link rel="stylesheet" href="../css/Servicios.min.css">
@@ -79,16 +99,24 @@
     <section class="container-fluid py-4" id="entretenimiento">
         <div class="row">
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/entretenimiento-1-servicios.png" alt="">
+              <a href="../img/entretenimiento-1-servicios.png" data-lightbox="entretenimiento" data-title="Piscina externa">
+                <img class="w-100 aparecer" src="../img/entretenimiento-1-servicios.png" alt="Piscina externa" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/entretenimiento-2-servicios.png" alt="">
+              <a href="../img/entretenimiento-2-servicios.png" data-lightbox="entretenimiento" data-title="Piscina interna">
+                <img class="w-100 aparecer" src="../img/entretenimiento-2-servicios.png" alt="Piscina interna" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/entretenimiento-3-servicios.png" alt="">
+              <a href="../img/entretenimiento-3-servicios.png" data-lightbox="entretenimiento" data-title="Ingreso Spa">
+                <img class="w-100 aparecer" src="../img/entretenimiento-3-servicios.png" alt="Ingreso Spa" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/entretenimiento-4-servicios.png" alt="">
+              <a href="../img/entretenimiento-4-servicios.png" data-lightbox="entretenimiento" data-title="Gimnasio">
+                <img class="w-100 aparecer" src="../img/entretenimiento-4-servicios.png" alt="Gimnasio" loading="lazy">
+              </a>
             </div>
         </div>
         
@@ -96,16 +124,24 @@
         
         <div class="row">
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/entretenimiento-5-servicios.png" alt="">
+              <a href="../img/entretenimiento-5-servicios.png" data-lightbox="entretenimiento" data-title="Piscina externa">
+                <img class="w-100 aparecer" src="../img/entretenimiento-5-servicios.png" alt="Piscina externa" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/entretenimiento-6-servicios.png" alt="">
+              <a href="../img/entretenimiento-6-servicios.png" data-lightbox="entretenimiento" data-title="Gimnasio">
+                <img class="w-100 aparecer" src="../img/entretenimiento-6-servicios.png" alt="Gimnasio" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/entretenimiento-7-servicios.png" alt="">
+              <a href="../img/entretenimiento-7-servicios.png" data-lightbox="entretenimiento" data-title="Gimnasio">
+                <img class="w-100 aparecer" src="../img/entretenimiento-7-servicios.png" alt="Gimnasio" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/entretenimiento-8-servicios.png" alt="">
+              <a href="../img/entretenimiento-8-servicios.png" data-lightbox="entretenimiento" data-title="Spa">
+                <img class="w-100 aparecer" src="../img/entretenimiento-8-servicios.png" alt="Spa" loading="lazy">
+              </a>
             </div>
         </div>
     </section>
@@ -126,28 +162,28 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100" src="../img/entretenimiento-1-servicios.png" alt="">
+                        <img class="w-100" src="../img/entretenimiento-1-servicios.png" alt="entretenimiento" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/entretenimiento-2-servicios.png" alt="">
+                        <img class="w-100" src="../img/entretenimiento-2-servicios.png" alt="entretenimiento" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/entretenimiento-3-servicios.png" alt="">
+                        <img class="w-100" src="../img/entretenimiento-3-servicios.png" alt="entretenimiento" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/entretenimiento-4-servicios.png" alt="">
+                        <img class="w-100" src="../img/entretenimiento-4-servicios.png" alt="entretenimiento" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/entretenimiento-5-servicios.png" alt="">
+                        <img class="w-100" src="../img/entretenimiento-5-servicios.png" alt="entretenimiento" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/entretenimiento-6-servicios.png" alt="">
+                        <img class="w-100" src="../img/entretenimiento-6-servicios.png" alt="entretenimiento" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/entretenimiento-7-servicios.png" alt="">
+                        <img class="w-100" src="../img/entretenimiento-7-servicios.png" alt="entretenimiento" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/entretenimiento-8-servicios.png" alt="">
+                        <img class="w-100" src="../img/entretenimiento-8-servicios.png" alt="entretenimiento" loading="lazy">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
@@ -174,16 +210,24 @@
     <section class="container-fluid py-4" id="gastronomia">
         <div class="row">
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/gastronomia-1-servicios.png" alt="">
+              <a href="../img/gastronomia-1-servicios.png" data-lightbox="gastronomia" data-title="Puerta ingreso">
+                <img class="w-100 aparecer" src="../img/gastronomia-1-servicios.png" alt="Puerta ingreso" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/gastronomia-2-servicios.png" alt="">
+              <a href="../img/gastronomia-2-servicios.png" data-lightbox="gastronomia" data-title="Restaurant">
+                <img class="w-100 aparecer" src="../img/gastronomia-2-servicios.png" alt="Restaurant" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/gastronomia-3-servicios.png" alt="">
+              <a href="../img/gastronomia-3-servicios.png" data-lightbox="gastronomia" data-title="Sala de espera del restaurant">
+                <img class="w-100 aparecer" src="../img/gastronomia-3-servicios.png" alt="Sala de espera del restaurant" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/gastronomia-4-servicios.png" alt="">
+              <a href="../img/gastronomia-4-servicios.png" data-lightbox="gastronomia" data-title="Comedor del bufet">
+                <img class="w-100 aparecer" src="../img/gastronomia-4-servicios.png" alt="Comedor del bufet" loading="lazy">
+              </a>
             </div>
         </div>
 
@@ -191,16 +235,24 @@
 
         <div class="row">
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/gastronomia-5-servicios.png" alt="">
+              <a href="../img/gastronomia-5-servicios.png" data-lightbox="gastronomia" data-title="Comedor">
+                <img class="w-100 aparecer" src="../img/gastronomia-5-servicios.png" alt="Comedor" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/gastronomia-6-servicios.png" alt="">
+              <a href="../img/gastronomia-6-servicios.png" data-lightbox="gastronomia" data-title="Comedor">
+                <img class="w-100 aparecer" src="../img/gastronomia-6-servicios.png" alt="Comedor" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/gastronomia-7-servicios.png" alt="">
+              <a href="../img/gastronomia-7-servicios.png" data-lightbox="gastronomia" data-title="Bufet">
+                <img class="w-100 aparecer" src="../img/gastronomia-7-servicios.png" alt="Bufet" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/gastronomia-8-servicios.png" alt="">
+              <a href="../img/gastronomia-8-servicios.png" data-lightbox="gastronomia" data-title="Comedor del bufet">
+                <img class="w-100 aparecer" src="../img/gastronomia-8-servicios.png" alt="Comedor del bufet" loading="lazy">
+              </a>
             </div>
         </div>
     </section>
@@ -223,28 +275,28 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100" src="../img/gastronomia-1-servicios.png" alt="">
+                        <img class="w-100" src="../img/gastronomia-1-servicios.png" alt="gastronomia" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/gastronomia-2-servicios.png" alt="">
+                        <img class="w-100" src="../img/gastronomia-2-servicios.png" alt="gastronomia" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/gastronomia-3-servicios.png" alt="">
+                        <img class="w-100" src="../img/gastronomia-3-servicios.png" alt="gastronomia" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/gastronomia-4-servicios.png" alt="">
+                        <img class="w-100" src="../img/gastronomia-4-servicios.png" alt="gastronomia" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/gastronomia-5-servicios.png" alt="">
+                        <img class="w-100" src="../img/gastronomia-5-servicios.png" alt="gastronomia" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/gastronomia-6-servicios.png" alt="">
+                        <img class="w-100" src="../img/gastronomia-6-servicios.png" alt="gastronomia" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/gastronomia-7-servicios.png" alt="">
+                        <img class="w-100" src="../img/gastronomia-7-servicios.png" alt="gastronomia" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/gastronomia-8-servicios.png" alt="">
+                        <img class="w-100" src="../img/gastronomia-8-servicios.png" alt="gastronomia" loading="lazy">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
@@ -271,16 +323,24 @@
     <section class="container-fluid py-4" id="eventos">
         <div class="row">
             <div class="col-md-3">
-                <img class="w-100" src="../img/eventos-1-servicios.png" alt="">
+              <a href="../img/eventos-1-servicios.png" data-lightbox="eventos" data-title="Auditorio">
+                <img class="w-100" src="../img/eventos-1-servicios.png" alt="Auditorio" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/eventos-2-servicios.png" alt="">
+              <a href="../img/eventos-2-servicios.png" data-lightbox="eventos" data-title="Auditorio">
+                <img class="w-100 aparecer" src="../img/eventos-2-servicios.png" alt="Auditorio" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/eventos-3-servicios.png" alt="">
+              <a href="../img/eventos-3-servicios.png" data-lightbox="eventos" data-title="Sala de reuniones">
+                <img class="w-100 aparecer" src="../img/eventos-3-servicios.png" alt="Sala de reuniones" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/eventos-4-servicios.png" alt="">
+              <a href="../img/eventos-4-servicios.png" data-lightbox="eventos" data-title="Salon festivo">
+                <img class="w-100 aparecer" src="../img/eventos-4-servicios.png" alt="Salon festivo" loading="lazy">
+              </a>
             </div>
         </div> 
         
@@ -288,16 +348,24 @@
         
         <div class="row">
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/eventos-5-servicios.png" alt="">
+              <a href="../img/eventos-5-servicios.png" data-lightbox="eventos" data-title="Sala de reuniones">
+                <img class="w-100 aparecer" src="../img/eventos-5-servicios.png" alt="Sala de reuniones" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/eventos-6-servicios.png" alt="">
+              <a href="../img/eventos-6-servicios.png" data-lightbox="eventos" data-title="Sala de espera">
+                <img class="w-100 aparecer" src="../img/eventos-6-servicios.png" alt="Sala de espera" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/eventos-7-servicios.png" alt="">
+              <a href="../img/eventos-7-servicios.png" data-lightbox="eventos" data-title="Sala de espera">
+                <img class="w-100 aparecer" src="../img/eventos-7-servicios.png" alt="Sala de espera" loading="lazy">
+              </a>
             </div>
             <div class="col-md-3">
-                <img class="w-100 aparecer" src="../img/eventos-8-servicios.png" alt="">
+              <a href="../img/eventos-8-servicios.png" data-lightbox="eventos" data-title="Salon festivo">
+                <img class="w-100 aparecer" src="../img/eventos-8-servicios.png" alt="Salon festivo" loading="lazy">
+              </a>
             </div>
         </div>
     </section>
@@ -319,28 +387,28 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100" src="../img/eventos-1-servicios.png" alt="">
+                        <img class="w-100" src="../img/eventos-1-servicios.png" alt="Salon de eventos" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/eventos-2-servicios.png" alt="">
+                        <img class="w-100" src="../img/eventos-2-servicios.png" alt="Salon de eventos" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/eventos-3-servicios.png" alt="">
+                        <img class="w-100" src="../img/eventos-3-servicios.png" alt="Salon de eventos" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/eventos-4-servicios.png" alt="">
+                        <img class="w-100" src="../img/eventos-4-servicios.png" alt="Salon de eventos" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/eventos-5-servicios.png" alt="">
+                        <img class="w-100" src="../img/eventos-5-servicios.png" alt="Salon de eventos" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/eventos-6-servicios.png" alt="">
+                        <img class="w-100" src="../img/eventos-6-servicios.png" alt="Salon de eventos" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/eventos-7-servicios.png" alt="">
+                        <img class="w-100" src="../img/eventos-7-servicios.png" alt="Salon de eventos" loading="lazy">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100" src="../img/eventos-8-servicios.png" alt="">
+                        <img class="w-100" src="../img/eventos-8-servicios.png" alt="Salon de eventos" loading="lazy">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
