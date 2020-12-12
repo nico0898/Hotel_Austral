@@ -97,3 +97,9 @@ ul{
     animation-duration: 0.8s;
     animation-name: aparecer;
 }
+
+.img-hover{
+    :hover{
+        border: 1px solid #FFFFFF;
+    }
+}
